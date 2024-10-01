@@ -1,0 +1,118 @@
+
+body {
+  color: #0000ff;
+  font-family: courier;
+}
+
+p {
+  color: red;
+}
+
+.blue-section {
+  color:blue;
+}
+  button {
+    background-color: rgb(255, 66, 66);
+    color: white;
+    cursor: pointer; 
+  }
+body {
+  color: #0000ff;
+  font-family: courier;
+}
+
+p {
+  color: red;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  position: relative; /* For positioning teeth */
+}
+
+section {
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+/* Teeth styling */
+.teeth {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* teeth won't touch */
+}
+
+.tooth {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  background-color: #f8f9fa;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Teeth */
+.teeth {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* teeth wont touch */
+}
+
+.tooth {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  background-color: #f8f9fa;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  text-indent: -9999px; /* Hide text inside the link */
+}
+
+/* Teeth */
+.teeth {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* teeth wont touch */
+}
+
+.tooth {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  background-color: #f8f9fa;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  text-indent: -9999px; /* Hide text inside the link */
+}
+
+/* Tooth positions for top row with a curve */
+.tooth1 { top: 20%; left: 10%; transform: translateY(10px); }
+.tooth2 { top: 20%; left: 25%; transform: translateY(-5px); }
+.tooth3 { top: 20%; left: 40%; transform: translateY(-15px); }
+.tooth4 { top: 12%; left: 55%; transform: translateY(-5px); }
+.tooth5 { top: 10%; left: 70%; transform: translateY(10px); }
+.tooth6 { top: 25%; left: 85%; transform: translateY(10px); }
+
+/* Tooth positions for bottom row with spacing between rows */
+.tooth7 { top: 80%; left: 10%; transform: translateY(-10px); }
+.tooth8 { top: 90%; left: 25%; transform: translateY(0px); }
+.tooth9 { top: 100%; left: 40%; transform: translateY(10px); }
+.tooth10 { top: 110%; left: 55%; transform: translateY(0px); }
+.tooth11 { top: 100%; left: 70%; transform: translateY(-10px); }
+.tooth12 { top: 80%; left: 85%; transform: translateY(0px); }
+.headline {
+font-family: "Bungee", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
