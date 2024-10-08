@@ -34,7 +34,6 @@ body {
       transform: translateX(-100%); /* Move to the left off-screen */
   }
 }
-
 .bottom-box {
   background-color: blue; /* Bottom blue rectangle */
   font-family: 'Roboto', sans-serif;

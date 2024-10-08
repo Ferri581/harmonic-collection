@@ -1,5 +1,6 @@
 
 body {
+  background-color: aqua;
   color: #0000ff;
   font-family: courier;
 }
@@ -95,6 +96,7 @@ button {
   display: block;
   text-indent: -9999px; /* Hide text inside the link */
 }
+
 
 /* Tooth positions for top row with a curve */
 .tooth1 { top: 20%; left: 10%; transform: translateY(10px); }
