@@ -1,6 +1,7 @@
 body{
     background-color: #000000;
-.germ1 {
+
+.Germ1 {
     animation: fly 20s linear infinite;
     position: fixed;
     top: 0;
@@ -9,8 +10,46 @@ body{
     pointer-events: none;
     width: 50%; 
     height: auto;
+    transform:scale(10px);
 }
+.Germ2 {
+  animation: fly 20s linear infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  pointer-events: none;
+  width: 60%; 
+  height: auto;
+  transform:scale(10px);
+}
+
+.lost-text {
+    color: red;            
+    font-size: 200px;       
+    text-align: center;    /* Centers the text horizontally */
+    margin-top: 100px;      
+}
+
+background-color: Black;
 /*The flying part of the image*/
+@-webkit-keyframes fly {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(80vw, 10vh); /* Move towards right */
+    }
+    50% {
+      transform: translate(60vw, 60vh); /* Move downwards and right */
+    }
+    75% {
+      transform: translate(10vw, 30vh); /* Move left again */
+    }
+    100% {
+      transform: translate(0, 0); /* Back to starting point */
+    }
+  }
 @keyframes fly {
     0% {
         transform: translate(0, 0);

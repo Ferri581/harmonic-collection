@@ -1,4 +1,5 @@
 body {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +26,10 @@ body {
   max-width: 500px; /* Adjust image size */
   height: 430px;
 }
-
+@font-face {
+  font-family: 'SavateRegular';
+  src: url('savate-regular.otf') format('opentype');
+}
 @keyframes scroll-left {
   0% {
       transform: translateX(100%); /* Start from the edge of the screen */
@@ -34,9 +38,10 @@ body {
       transform: translateX(-100%); /* Move to the left off-screen */
   }
 }
+
 .bottom-box {
   background-color: blue; /* Bottom blue rectangle */
-  font-family: 'Roboto', sans-serif;
+  font-family: SavateRegular;
   font-size: 30px;
   font-weight: bold;
   color: yellow;
