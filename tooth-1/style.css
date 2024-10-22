@@ -1,7 +1,10 @@
 body {
   background-color: #000000;
 }
-
+@font-face {
+  font-family: 'SavateRegular';
+  src: url('savate-regular.otf') format('opentype');
+}
 .Germ1, .Germ2, .Germ3, .Germ4, .Germ5, .Germ6 {
   position: fixed;
   z-index: 999;

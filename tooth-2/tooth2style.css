@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Removes default margin */
+    background-color: skyblue; 
+    font-family: 'Cherry Bomb One', cursive;
+    z-index: 1;
+}
+
+.youwin {
+    text-align: center; /* Centers text inside the div */
+    color: #ffffff; 
+}
+
+.youwin h1 {
+    font-size: 120px; /* Header size */
+    margin: 0; /* Remove default margin */
+}
+
+.youwin p {
+    font-size: 40px; 
+}
+.stars {
+    width: 150px; 
+    height: auto; 
+    margin-right: 20px; /* Space between image and text */
+    margin-top: -200px; 
+    z-index: 2;
+    animation: rotate 2s ease-in-out infinite; /* Only rotation animation */
+}
+
+.stars2 {
+    width: 150px; 
+    height: auto; 
+    margin-left: 550px; 
+    margin-top: -50px;
+    z-index: 2;
+    animation: rotate 2s ease-in-out infinite; /* Only rotation animation */
+}
+
+/* Define the rotation animation */
+@keyframes rotate {
+    0% {
+        transform: rotate(-2deg); /* Start at -2 degrees */
+    }
+    50% {
+        transform: rotate(2deg); /* Rotate to +2 degrees */
+    }
+    100% {
+        transform: rotate(-2deg); /* Rotate back to -2 degrees */
+    }
+}
