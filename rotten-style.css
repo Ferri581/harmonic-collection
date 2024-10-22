@@ -1,41 +1,25 @@
-/* Main container */
-body,
-html {
+body {
+    background-color: red;
+    font-family: 'Cherry Bomb One', cursive;
+    color: #FFDD00;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: top;
     height: 100vh;
-    font-family:'Cherry Bomb One', cursive;
-    background-color: #fff;
-}
-
-/* Outer striped background */
-.striped-bg {
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 600px;
-    background: repeating-linear-gradient(
-        90deg,
-        #FFDD00,
-        #FFDD00 40px,
-        #FF0000 40px,
-        #FF0000 89px
-    );
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    border: 2px solid black;
-    padding: 10px;
-    box-sizing: border-box;
 }
 
-/* Starburst effect */
+.text-container {
+    font-size: 3rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
 .starburst {
-    position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 800px;
+    height: 800px;
     background-color: #FFDD00;
     clip-path: polygon(
         50% 0%, 61% 35%, 98% 35%, 68% 57%, 
@@ -46,32 +30,29 @@ html {
     align-items: center;
     justify-content: center;
     border: 4px solid #003399;
+    margin-top: 20px;
+    position: relative; /* Parent container for positioning */
+    z-index: 1;
 }
 
-.text-container {
-    font-family: 'Cherry Bomb One', cursive;
-    text-align: center; /* Correct text alignment */
-    margin-top: -10px;
-    position: absolute; /* Allows for free movement across the page */
-    top: 5px; 
-    left: 100%; 
-    transform: translateX(-50%); /*  center the text horizontally */
+.teeth {
+    position: absolute; /* To position the teeth on top of the starburst */
+    top: 54%; /* Adjust the position of the teeth */
+    left: 50%; /* Center horizontally relative to the starburst */
+    transform: translate(-50%, -70%); /* Fine-tune the position */
+    display: flex;
+    justify-content: center;
+    z-index: 2; /* On top of the starburst */
 }
 
-.tooth img {
-    width: 5px; 
-    height: auto; 
-    position: absolute; 
+.toothtooth2, .toothtooth3 {
+    margin: 10px; /* Space between teeth images */
 }
-  
-.tooth2 {
-    top: 20%;
-    left: 25%;
-    transform: translateY(-5px);
+
+.teeth img {
+    width: 75px;
+    height: auto; /* Maintain aspect ratio */
 }
-  
-.tooth3 {
-    top: 30%;
-    left: 40%;
-    transform: translateY(-15px);
+.teeth img:hover {
+    transform: scale(1.5);
 }

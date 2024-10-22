@@ -1,70 +1,92 @@
-body{
-    background-color: #000000;
-
-.Germ1 {
-    animation: fly 20s linear infinite;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    pointer-events: none;
-    width: 50%; 
-    height: auto;
-    transform:scale(10px);
+body {
+  background-color: #000000;
 }
-.Germ2 {
-  animation: fly 20s linear infinite;
+
+.Germ1, .Germ2, .Germ3, .Germ4, .Germ5, .Germ6 {
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 999;
   pointer-events: none;
-  width: 60%; 
   height: auto;
-  transform:scale(10px);
+  transition: transform 0.3s ease; 
 }
 
-.lost-text {
-    color: red;            
-    font-size: 200px;       
-    text-align: center;    /* Centers the text horizontally */
-    margin-top: 100px;      
+/* Germ Image Sizes */
+.Germ1 {
+  animation: smallMove1 8s ease-in-out infinite; 
+  top: 5vh; 
+  left: 30vw;
+  width: 70%; 
 }
 
-background-color: Black;
-/*The flying part of the image*/
-@-webkit-keyframes fly {
-    0% {
-      transform: translate(0, 0);
-    }
-    25% {
-      transform: translate(80vw, 10vh); /* Move towards right */
-    }
-    50% {
-      transform: translate(60vw, 60vh); /* Move downwards and right */
-    }
-    75% {
-      transform: translate(10vw, 30vh); /* Move left again */
-    }
-    100% {
-      transform: translate(0, 0); /* Back to starting point */
-    }
-  }
-@keyframes fly {
-    0% {
-        transform: translate(0, 0);
-    }
-    25% {
-        transform: translate(80vw, 10vh); /* Move towards right */
-    }
-    50% {
-        transform: translate(60vw, 60vh); /* Move downwards and right */
-    }
-    75% {
-        transform: translate(10vw, 30vh); /* Move left again */
-    }
-    100% {
-        transform: translate(0, 0); /* Back to starting point */
-    }
+.Germ2 {
+  animation: smallMove2 10s ease-in-out infinite; 
+  top: 15vh;
+  left: 5vw;
+  width: 70%; 
 }
+
+ .Germ5{
+  animation: smallMove3 9s ease-in-out infinite; 
+  top: 20vh;
+  left: 10vw;
+  width: 55%;
+}
+
+.Germ4 {
+  animation: smallMove4 7s ease-in-out infinite; 
+  top: 25vh;
+  left: 30vw;
+  width: 50%;
+}
+
+.Germ3 {
+  animation: smallMove5 11s ease-in-out infinite; 
+  bottom: 5vh;
+  left: 40vw;
+  width: 40%;
+}
+
+.Germ6 {
+  animation: smallMove6 8s ease-in-out infinite; 
+  bottom: 15vh;
+  right: 20vw;
+  width: 80%; 
+}
+
+/* Keyframes for slight movement */
+
+/* Germ1: Slight horizontal movement */
+@keyframes smallMove1 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(5vw, 0); } /* Move 5vw to the right */
+}
+
+/* Germ2: Slight vertical movement */
+@keyframes smallMove2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(0, 5vh); } /* Move 5vh down */
+}
+
+/* Germ3: Slight horizontal movement */
+@keyframes smallMove3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-5vw, 0); } /* Move 5vw to the left */
+}
+
+/* Germ4: Slight vertical movement */
+@keyframes smallMove4 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(0, -5vh); } /* Move 5vh up */
+}
+
+/* Germ5: Slight diagonal movement */
+@keyframes smallMove5 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(3vw, 3vh); } /* Move diagonally */
+}
+
+/* Germ6: Slight horizontal movement */
+@keyframes smallMove6 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-3vw, 0); } /* Move 3vw to the left */
 }

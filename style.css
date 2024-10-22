@@ -1,20 +1,16 @@
 body {
-  
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color:rgb(235, 234, 234); ; /* Background color */
-  margin: 10;
-  /* margin: 10; */
   background-color: #ff0000; /* Red background */
   border: 5px solid rgb(235, 234, 234); /* White border around */
   box-shadow: 0 0 0 5px rgb(240, 8, 8); /* Red outline after white border */
+  margin: 0; /* Fixed margin: 10 to margin: 0 */
 }
 
 .outline-text {
-  font-family: 'Arial', sans-serif;
   font-size: 4rem;
   font-weight: bold;
   color: rgb(218, 218, 218); /* White text */
@@ -22,14 +18,18 @@ body {
   padding: 350px;
   height: 240px;
 }
+
 .outline-text img {
   max-width: 500px; /* Adjust image size */
   height: 430px;
 }
+
+/* Custom Font */
 @font-face {
   font-family: 'SavateRegular';
   src: url('savate-regular.otf') format('opentype');
 }
+
 @keyframes scroll-left {
   0% {
       transform: translateX(100%); /* Start from the edge of the screen */
@@ -39,10 +39,11 @@ body {
   }
 }
 
+/* Bottom Box */
 .bottom-box {
-  background-color: blue; /* Bottom blue rectangle */
-  font-family: SavateRegular;
-  font-size: 30px;
+  background-color: blue;
+  font-family: SavateRegular; 
+  font-size: 50px;
   font-weight: bold;
   color: yellow;
   text-align: center;
@@ -52,12 +53,6 @@ body {
   position: absolute;
   bottom: 0;
   animation: scroll-left 10s linear infinite;
-
 }
-  .bottom-box {
-    font-family: "Bungee", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
 
- 
+
